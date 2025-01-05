@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Mariangel Araviches, desarrolladora web en constante aprendizaje con experiencia en HTML, CSS, JavaScript y React.">
+        <title>Portfolio | Mariangel Araviches</title>
+        <link rel="icon" href="assets/img/icon.svg" type="image/x-icon"> 
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script defer src="assets/js/script.js"></script>
+        
+        <!-- Fuente e Iconos -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@200;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html"> <img src="assets/img/logo.png" alt="logo" class="logo"> </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#proyectos">Projects</a></li>
+                    <li><button id="language-toggle" class="language-toggle">ES/EN</button></li>
+                </ul>
+            </nav>
+            <!-- Menú hamburguesa -->
+            <div id="menu-toggle" class="menu__toggle">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>Bienvenid@ a mi mundo digital</h1>
+        <p>Desarrolladora web en constante aprendizaje</p>
+    </section>
+
+    <section class="fondo">
+        <img id="background-gif" src="assets/img/fondo.gif" alt="Fondo animado">
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2 class="about_title">Sobre mí</h2>
+            <p>Mi nombre es Mariangel Araviches. Soy una apasionada desarrolladora Front-End que está dando sus primeros pasos hacia el mundo Fullstack. Actualmente, estoy estudiando un bootcamp de desarrollo web para fortalecer mis habilidades y expandir mi conocimiento. <br><br>
+
+                Desde 2023, he explorado la programación con cursos en línea y proyectos personales, motivada por mi fascinación por cómo la tecnología transforma el mundo. Mis herramientas principales son HTML, CSS, JavaScript y React, pero siempre estoy en busca de nuevos desafíos. A futuro, aspiro a adentrarme en el universo de DevOps para ampliar mis horizontes en tecnología. En mis tiempos libres, me encanta jugar videojuegos, especialmente los clásicos retro, y disfrutar de series animadas como Daria. <br><br>
+                
+                ¿Trabajamos junt@s? Puedes contactarme a mi correo <strong>mariangelaraviches@gmail.com.</strong></p>
+        </div>
+    </section>
+    
+    <main>
+        <section id="proyectos">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-container">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/store.png" alt="Imagen Store">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Front End Store</h3>
+                        <p class="project-description">Un proyecto de e-commerce que simula una tienda en línea con un diseño responsive, utilizando HTML y CSS.</p>
+                        <a href="https://github.com/Mangellch/front-end-store.git" target="_blank" class="project-link">Github</a>
+                    </div>
+                </div>
+        
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/desafio_css.png" alt="Imagen Blog">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Landing Page</h3>
+                        <p class="project-description">Un blog sencillo desarrollado con HTML y CSS que permite la visualización de artículos relacionados con el mundo del café.</p>
+                        <a href="https://github.com/Mangellch/blogdecafe.git" target="_blank" class="project-link">Github</a>
+                    </div>
+                </div>
+        
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/desafio_flex.png" alt="Imagen Iguana Page">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Iguana Page</h3>
+                        <p class="project-description">Un sitio web con temática de iguanas, utilizando HTML y CSS. La página presenta un diseño atractivo con información sobre estas criaturas y una interfaz fácil de navegar.</p>
+                        <a href="https://github.com/Mangellch/iguanapage.git" target="_blank" class="project-link">Github</a>
+                    </div>
+                </div>
+        
+                <!-- Proyecto 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/desafio_cuppon.png" alt="Imagen Cuppon Page">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Cuppon Page</h3>
+                        <p class="project-description">Un proyecto web que simula una página de cupones y descuentos. Utiliza HTML, Bootstrap y CSS para crear una interfaz visual atractiva y funcional que permite a los usuarios visualizar diversas promociones.</p>
+                        <a href="https://github.com/Mangellch/paginacuppon.git" target="_blank" class="project-link">Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Botón Ver Más -->
+        <div class="ver-mas-container"> 
+                <button id="verMasBtn" class="ver-mas-btn" onclick="window.location.href='projects.html';">More Projects</button>
+        </div>        
+    </main>
+    
+    <footer>
+        <p>© 2025 Mariangel Araviches</p>
+        <div class="linkedin-container">
+            <a class="icono_footer" href="https://www.linkedin.com/in/mariangel-araviches-82249430b/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-1x"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

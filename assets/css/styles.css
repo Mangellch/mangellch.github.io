@@ -1,0 +1,401 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    font-family: "Source Code Pro", serif;
+    height: 100%;
+}
+
+#language-toggle {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#language-toggle:hover {
+    color: #802aba;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+/* Fondo de gif y secciones */
+.fondo {
+    position: relative;
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+
+
+#background-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ajustes de las secciones */
+#about, #proyectos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* Ajuste en la vista móvil */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Mostrar en columna */
+    }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar img {
+    margin-top: 13px;
+    height: 100px;
+    width: auto;
+}
+
+/* Estilo para las listas de navegación */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar .nav-links li {
+    margin: 0 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #9146FF;
+}
+
+/* Menú Toggle */
+.menu__toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: white;
+}
+
+/* Menú en móviles */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;  /* Ocultar el menú en dispositivos móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;  /* Mostrar el menú cuando se active */
+    }
+
+    .menu__toggle {
+        display: flex;  /* Mostrar el icono de menú en dispositivos móviles */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 15px;
+        display: block;
+    }
+}
+
+.language-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.language-toggle:hover {
+    color: #9146FF;
+}
+
+/* SECCIÓN HERO */
+.hero {
+    font-family: "Press Start 2P", serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.hero h1 {
+    margin-top: 10rem;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.hero .cta {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #9146FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* GIF DE FONDO */
+.fondo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .fondo::after {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+/* SECCIÓN DE CONTENIDO GENERAL */
+#about, section > p {
+    text-align: justify;
+    padding: 40px;
+}
+
+.container > p {
+    margin-top: 4rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.about_title {
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/* PROYECTOS */
+#proyectos {
+    padding: 1rem;
+    text-align: center;
+}
+
+#proyectos > p {
+    margin-bottom: 1rem;
+}
+
+section > h2 {
+    margin-bottom: 5rem;
+    font-family: "Press Start 2P", serif;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin: 4rem;
+}
+
+.proyectos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+    border-radius: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-image img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title {
+    margin: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.linkedin-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icono_footer {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.icono_footer:hover {
+    color: #9146FF;
+}
+
+/* CONTENEDORES ADICIONALES */
+.ver-mas-container, .linkedin-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ver-mas-btn {
+    margin-bottom: 5rem;
+    background-color: #544bfa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.ver-mas-btn:hover {
+    background-color: #802aba;
+}
+
+/* Animaciones de entrada para los proyectos */
+@media (max-width: 768px) {
+    .proyecto-card {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .proyecto-card.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta {
+        padding: 8px 16px;
+    }
+}
