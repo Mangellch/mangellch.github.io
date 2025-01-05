@@ -23,8 +23,8 @@
                 <ul class="nav-links">
                     <li><a href="index.html">About Me</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><button id="language-toggle" class="language-toggle">ES/EN</button></li>
                 </ul>
+                <button id="language-toggle" class="language-toggle">ES/EN</button>
             </nav>
             <!-- Menú hamburguesa -->
             <div id="menu-toggle" class="menu__toggle">
@@ -38,9 +38,13 @@
         <p>Desarrolladora web en constante aprendizaje</p>
     </section>
 
-    <section class="fondo">
-        <img id="background-gif" src="assets/img/fondo.gif" alt="Fondo animado">
-    </section>    
+   <!-- Fondo animado -->
+   <section class="fondo">
+    <video id="background-video" autoplay loop muted playsinline>
+        <source src="assets/video/fondo.mp4" type="video/mp4">
+        Tu navegador no soporta el video de fondo.
+    </video>
+</section>
 
     <main>
         <section id="proyectos">

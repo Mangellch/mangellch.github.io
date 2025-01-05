@@ -37,7 +37,7 @@ body {
     transition: color 0.3s;
 }
 
-/* Fondo de gif y secciones */
+/* Fondo y secciones */
 .fondo {
     position: relative;
     height: 100vh; 
@@ -47,15 +47,14 @@ body {
     background-repeat: no-repeat;
 }
 
-
-
-#background-gif {
+#background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 /* Ajustes de las secciones */
@@ -224,7 +223,7 @@ body {
     transition: background 0.3s;
 }
 
-/* GIF DE FONDO */
+/* VIDEO DE FONDO */
 .fondo::after {
     content: "";
     position: absolute;
