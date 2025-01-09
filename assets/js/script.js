@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const content = {
         es: {
             welcome: "Bienvenid@ a mi mundo digital",
-            description: "Un viaje continuo de aprendizaje y desarrollo",
+            description: "Desarrolladora web en constante aprendizaje",
             aboutTitle: "Sobre mí",
             aboutText: `¡Hola! Soy Mariangel Araviches, una desarrolladora en constante crecimiento, dando el salto de Front-End a Fullstack con una sólida base en <strong>HTML, CSS, JavaScript y React.</strong> Actualmente, me encuentro fortaleciendo mis habilidades a través de un bootcamp de desarrollo web, siempre con la meta de expandir mi conocimiento y enfrentar nuevos desafíos.<br><br>
 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         en: {
             welcome: "Welcome to my digital world",
-            description: "A continuous journey of learning and development",
+            description: "eb developer in constant learning",
             aboutTitle: "About me",
             aboutText: `Hello! I am Mariangel Araviches, a developer in constant growth, making the leap from Front-End to Fullstack with a solid foundation in <strong>HTML, CSS, JavaScript and React.</strong> Currently, I am strengthening my skills through a web development bootcamp, always with the goal of expanding my knowledge and facing new challenges.<br><br>
 
