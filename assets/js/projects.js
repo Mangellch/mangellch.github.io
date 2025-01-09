@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const translations = {
         es: {
             welcome: "Bienvenid@ a mi mundo digital",
-            description: "Desarrolladora web en constante aprendizaje",
+            description: "Transformando ideas en soluciones digitales",
             projects: "Mis Proyectos",
             projectsDesc: "He desarrollado proyectos web utilizando HTML, CSS, JavaScript y Bootstrap para crear interfaces responsivas, funcionales y atractivas. HTML proporciona una estructura clara, CSS mejora el diseño visual y la adaptabilidad, JavaScript agrega interactividad, y Bootstrap asegura un desarrollo ágil y responsive. Cada proyecto refleja mi enfoque en la eficiencia y la experiencia del usuario.",
             projectTitles: [
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         en: {
             welcome: "Welcome to my digital world",
-            description: "Web developer in constant learning",
+            description: "Transforming ideas into digital solutions",
             projects: "My Projects",
             projectsDesc: "I have developed web projects using HTML, CSS, JavaScript, and Bootstrap to create responsive, functional, and attractive interfaces. HTML provides a clear structure, CSS enhances the visual design and adaptability, JavaScript adds interactivity, and Bootstrap ensures agile and responsive development. Each project reflects my focus on efficiency and user experience.",
             projectTitles: [
