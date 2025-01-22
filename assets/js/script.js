@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             project2Description: "Un blog sencillo desarrollado con HTML y CSS que permite la visualización de artículos relacionados con el mundo del café.",
             project2Link: "https://mangellch.github.io/blogdecafe/",
             project3Title: "Festival De Musica",
-            project3Description: "This project is an interactive website designed to promote and manage a music festival. The site offers a visual and dynamic experience for users interested in the event, with an intuitive and modern interface.",
+            project3Description: "Este proyecto es una página web interactiva diseñada para promocionar y gestionar un festival de música. El sitio ofrece una experiencia visual y dinámica para los usuarios interesados en el evento, con una interfaz intuitiva y moderna.",
             project3Link: "https://github.com/Mangellch/rock-metal-festival.git",
             project4Title: "Cuppon Page",
             project4Description: "Un proyecto web que simula una página de cupones y descuentos. Utiliza HTML, Bootstrap y CSS para crear una interfaz visual atractiva y funcional que permite a los usuarios visualizar diversas promociones.",
