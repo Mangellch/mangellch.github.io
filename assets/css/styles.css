@@ -23,7 +23,7 @@ body {
     height: 100%;
 }
 
-a {
+.mail {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
