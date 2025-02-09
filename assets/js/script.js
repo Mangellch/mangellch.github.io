@@ -50,16 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
             projectsTitle: "Mis Proyectos",
             project1Title: "Front End Store",
             project1Description: "Un proyecto de e-commerce que simula una tienda en línea con un diseño responsive, utilizando HTML y CSS.",
-            project1Link: "https://mangellch.github.io/front-end-store/",
             project2Title: "Landing Page",
             project2Description: "Un blog sencillo desarrollado con HTML y CSS que permite la visualización de artículos relacionados con el mundo del café.",
-            project2Link: "https://mangellch.github.io/blogdecafe/",
             project3Title: "Festival De Musica",
             project3Description: "Este proyecto es una página web interactiva diseñada para promocionar y gestionar un festival de música. El sitio ofrece una experiencia visual y dinámica para los usuarios interesados en el evento, con una interfaz intuitiva y moderna.",
-            project3Link: "https://github.com/Mangellch/rock-metal-festival.git",
             project4Title: "Cuppon Page",
             project4Description: "Un proyecto web que simula una página de cupones y descuentos. Utiliza HTML, Bootstrap y CSS para crear una interfaz visual atractiva y funcional que permite a los usuarios visualizar diversas promociones.",
-            project4Link: "https://mangellch.github.io/paginacuppon/",
         },
         en: {
             welcome: "Welcome to my digital world",
@@ -76,16 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
             projectsTitle: "My Projects",
             project1Title: "Front End Store",
             project1Description: "An e-commerce project simulating an online store with a responsive design using HTML and CSS.",
-            project1Link: "https://mangellch.github.io/front-end-store/",
             project2Title: "Landing Page",
             project2Description: "A simple blog developed with HTML and CSS that allows the visualization of articles related to the coffee world.",
-            project2Link: "https://mangellch.github.io/blogdecafe/",
             project3Title: "Musical Festival",
             project3Description: "This project is an interactive website designed to promote and manage a music festival. The site offers a visual and dynamic experience for users interested in the event, with an intuitive and modern interface.",
-            project3Link: "https://github.com/Mangellch/rock-metal-festival.git",
             project4Title: "Cuppon Page",
             project4Description: "A web project simulating a coupon and discount page. It uses HTML, Bootstrap, and CSS to create a visually appealing and functional interface that allows users to view various promotions.",
-            project4Link: "https://mangellch.github.io/paginacuppon/",
         }
     };
 
@@ -108,28 +100,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     title: content[currentLang].project1Title,
                     description: content[currentLang].project1Description,
-                    link: content[currentLang].project1Link
                 },
                 {
                     title: content[currentLang].project2Title,
                     description: content[currentLang].project2Description,
-                    link: content[currentLang].project2Link
                 },
                 {
                     title: content[currentLang].project3Title,
                     description: content[currentLang].project3Description,
-                    link: content[currentLang].project3Link
                 },
                 {
                     title: content[currentLang].project4Title,
                     description: content[currentLang].project4Description,
-                    link: content[currentLang].project4Link
                 }
             ];
 
             card.querySelector('.project-title').textContent = projectContent[index].title;
             card.querySelector('.project-description').textContent = projectContent[index].description;
-            card.querySelector('.project-link').setAttribute('href', projectContent[index].link);
         });
 
         // Actualizar el idioma de la página
